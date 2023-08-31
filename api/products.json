@@ -1,0 +1,98 @@
+[
+    {
+        "price": 500,
+        "id": 1,
+        "title": "Agua",
+        "urlImage": "https://picsum.photos/id/130/600"
+    },
+    {
+        "price": 600,
+        "id": 2,
+        "title": "Naranjada",
+        "urlImage": "https://picsum.photos/id/140/600"
+    },
+    {
+        "price": 198,
+        "id": 3,
+        "title": "Red bull",
+        "urlImage": "https://picsum.photos/id/150/600"
+    },
+    {
+        "price":890,
+        "id": 4,
+        "title": "Power",
+        "urlImage": "https://picsum.photos/id/160/600"
+    },
+    {
+        "price": 299,
+        "id": 5,
+        "title": "Coca cola",
+        "urlImage": "https://picsum.photos/id/120/600"
+    },
+    {
+        "price": 289,
+        "id": 6,
+        "title": "Pepsi",
+        "urlImage": "https://picsum.photos/id/110/600"
+    },
+    {
+        "price": 229,
+        "id": 7,
+        "title": "Fanta",
+        "urlImage": "https://picsum.photos/id/100/600"
+    },
+    {
+        "price": 219,
+        "id": 8,
+        "title": "Manzanita",
+        "urlImage": "https://picsum.photos/id/90/600"
+    },
+    {
+        "price": 290,
+        "id": 9,
+        "title": "Fresca",
+        "urlImage": "https://picsum.photos/id/80/600"
+    },
+    {
+        "price": 292,
+        "id": 10,
+        "title": "Sprite",
+        "urlImage": "https://picsum.photos/id/70/600"
+    },
+    {
+        "price": 270,
+        "id": 11,
+        "title": "Mirinda",
+        "urlImage": "https://picsum.photos/id/60/600"
+    },
+    {
+        "price": 250,
+        "id": 12,
+        "title": "Seven",
+        "urlImage": "https://picsum.photos/id/50/600"
+    },
+    {
+        "price": 509,
+        "id": 13,
+        "title": "Caballito",
+        "urlImage": "https://picsum.photos/id/40/600"
+    },
+    {
+        "price": 240,
+        "id": 14,
+        "title": "Red cola",
+        "urlImage": "https://picsum.photos/id/30/600"
+    },
+    {
+        "price": 225,
+        "id": 15,
+        "title": "Squirt",
+        "urlImage": "https://picsum.photos/id/20/600"
+    },
+    {
+        "price": 269,
+        "id": 16,
+        "title": "Limonada",
+        "urlImage": "https://picsum.photos/id/10/600"
+    }
+]
