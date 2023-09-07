@@ -11,47 +11,10 @@ let carrito = {}
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchData()
-    if(localStorage.getItem('carrito')) {
-        carrito = JSON.parse(localStorage.getItem('carrito'))
-        pintarCarrito()
-    }
 })
 cards.addEventListener('click', (e) => {
     addCarrito(e)
 })
-
-items.addEventListener('click', (e) => {
-    actionsAddDelete(e)
-})
-
-const actionsAddDelete = (e) =>{
-    if(e.target.classList.contains('btn-warning')){
-        const product = carrito[e.target.dataset.id]
-     //   console.log('@@@ issues =>', product , carrito)
-        product.cantidad++
-        carrito[e.target.dataset.id] = { ...product}
-        pintarCarrito()
-    }
-
-    e.stopPropagation()
-
-    if(e.target.classList.contains('btn-danger')){
-        const product = carrito[e.target.dataset.id]
-     //   console.log('@@@ issues =>', product , carrito)
-        product.cantidad--
-        if(product.cantidad === 0) {
-            delete carrito[e.target.dataset.id]
-        } else{
-        carrito[e.target.dataset.id] = { ...product}
-        }
-        pintarCarrito()
-    }
-    
-    e.stopPropagation()
-    
-}
-
-
 
 const addCarrito = e => {
    // console.log('@@@ event =>', e)
@@ -86,16 +49,12 @@ const pintarCarrito = () => {
         templateCarrito.querySelectorAll('td')[0].textContent = item.title
         templateCarrito.querySelectorAll('td')[1].textContent = item.cantidad
         templateCarrito.querySelector('span').textContent = item.cantidad * item.precio
-        templateCarrito.querySelector('.btn-warning').dataset.id = item.id
-        templateCarrito.querySelector('.btn-danger').dataset.id = item.id
         const clone = templateCarrito.cloneNode(true)
         fragment.appendChild(clone)
     })
     items.appendChild(fragment)
 
     drawFooter()
-
-    localStorage.setItem('carrito' , JSON.stringify(carrito))
 }
 const drawFooter = () =>{
     footer.innerHTML = ''
